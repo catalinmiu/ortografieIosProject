@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41BE29BF245C4C9A009B01C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BE29BE245C4C9A009B01C4 /* AppDelegate.swift */; };
+		41BE29C1245C4C9A009B01C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BE29C0245C4C9A009B01C4 /* SceneDelegate.swift */; };
+		41BE29C3245C4C9A009B01C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BE29C2245C4C9A009B01C4 /* ViewController.swift */; };
+		41BE29C6245C4C9A009B01C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41BE29C4245C4C9A009B01C4 /* Main.storyboard */; };
+		41BE29C8245C4C9D009B01C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41BE29C7245C4C9D009B01C4 /* Assets.xcassets */; };
+		41BE29CB245C4C9D009B01C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41BE29C9245C4C9D009B01C4 /* LaunchScreen.storyboard */; };
+		41BE29D6245C4C9E009B01C4 /* OrtografieQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BE29D5245C4C9E009B01C4 /* OrtografieQuizTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41BE29D2245C4C9E009B01C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41BE29B3245C4C9A009B01C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41BE29BA245C4C9A009B01C4;
+			remoteInfo = OrtografieQuiz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41BE29BB245C4C9A009B01C4 /* OrtografieQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrtografieQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41BE29BE245C4C9A009B01C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41BE29C0245C4C9A009B01C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41BE29C2245C4C9A009B01C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41BE29C5245C4C9A009B01C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41BE29C7245C4C9D009B01C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41BE29CA245C4C9D009B01C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41BE29CC245C4C9D009B01C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41BE29D1245C4C9E009B01C4 /* OrtografieQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrtografieQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41BE29D5245C4C9E009B01C4 /* OrtografieQuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrtografieQuizTests.swift; sourceTree = "<group>"; };
+		41BE29D7245C4C9E009B01C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41BE29B8245C4C9A009B01C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41BE29CE245C4C9E009B01C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41BE29B2245C4C9A009B01C4 = {
+			isa = PBXGroup;
+			children = (
+				41BE29BD245C4C9A009B01C4 /* OrtografieQuiz */,
+				41BE29D4245C4C9E009B01C4 /* OrtografieQuizTests */,
+				41BE29BC245C4C9A009B01C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41BE29BC245C4C9A009B01C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41BE29BB245C4C9A009B01C4 /* OrtografieQuiz.app */,
+				41BE29D1245C4C9E009B01C4 /* OrtografieQuizTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41BE29BD245C4C9A009B01C4 /* OrtografieQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				41BE29BE245C4C9A009B01C4 /* AppDelegate.swift */,
+				41BE29C0245C4C9A009B01C4 /* SceneDelegate.swift */,
+				41BE29C2245C4C9A009B01C4 /* ViewController.swift */,
+				41BE29C4245C4C9A009B01C4 /* Main.storyboard */,
+				41BE29C7245C4C9D009B01C4 /* Assets.xcassets */,
+				41BE29C9245C4C9D009B01C4 /* LaunchScreen.storyboard */,
+				41BE29CC245C4C9D009B01C4 /* Info.plist */,
+			);
+			path = OrtografieQuiz;
+			sourceTree = "<group>";
+		};
+		41BE29D4245C4C9E009B01C4 /* OrtografieQuizTests */ = {
+			isa = PBXGroup;
+			children = (
+				41BE29D5245C4C9E009B01C4 /* OrtografieQuizTests.swift */,
+				41BE29D7245C4C9E009B01C4 /* Info.plist */,
+			);
+			path = OrtografieQuizTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41BE29BA245C4C9A009B01C4 /* OrtografieQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41BE29DA245C4C9E009B01C4 /* Build configuration list for PBXNativeTarget "OrtografieQuiz" */;
+			buildPhases = (
+				41BE29B7245C4C9A009B01C4 /* Sources */,
+				41BE29B8245C4C9A009B01C4 /* Frameworks */,
+				41BE29B9245C4C9A009B01C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrtografieQuiz;
+			productName = OrtografieQuiz;
+			productReference = 41BE29BB245C4C9A009B01C4 /* OrtografieQuiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41BE29D0245C4C9E009B01C4 /* OrtografieQuizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41BE29DD245C4C9E009B01C4 /* Build configuration list for PBXNativeTarget "OrtografieQuizTests" */;
+			buildPhases = (
+				41BE29CD245C4C9E009B01C4 /* Sources */,
+				41BE29CE245C4C9E009B01C4 /* Frameworks */,
+				41BE29CF245C4C9E009B01C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41BE29D3245C4C9E009B01C4 /* PBXTargetDependency */,
+			);
+			name = OrtografieQuizTests;
+			productName = OrtografieQuizTests;
+			productReference = 41BE29D1245C4C9E009B01C4 /* OrtografieQuizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41BE29B3245C4C9A009B01C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "dcg-351";
+				TargetAttributes = {
+					41BE29BA245C4C9A009B01C4 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					41BE29D0245C4C9E009B01C4 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 41BE29BA245C4C9A009B01C4;
+					};
+				};
+			};
+			buildConfigurationList = 41BE29B6245C4C9A009B01C4 /* Build configuration list for PBXProject "OrtografieQuiz" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41BE29B2245C4C9A009B01C4;
+			productRefGroup = 41BE29BC245C4C9A009B01C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41BE29BA245C4C9A009B01C4 /* OrtografieQuiz */,
+				41BE29D0245C4C9E009B01C4 /* OrtografieQuizTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41BE29B9245C4C9A009B01C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41BE29CB245C4C9D009B01C4 /* LaunchScreen.storyboard in Resources */,
+				41BE29C8245C4C9D009B01C4 /* Assets.xcassets in Resources */,
+				41BE29C6245C4C9A009B01C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41BE29CF245C4C9E009B01C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41BE29B7245C4C9A009B01C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41BE29C3245C4C9A009B01C4 /* ViewController.swift in Sources */,
+				41BE29BF245C4C9A009B01C4 /* AppDelegate.swift in Sources */,
+				41BE29C1245C4C9A009B01C4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41BE29CD245C4C9E009B01C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41BE29D6245C4C9E009B01C4 /* OrtografieQuizTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41BE29D3245C4C9E009B01C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41BE29BA245C4C9A009B01C4 /* OrtografieQuiz */;
+			targetProxy = 41BE29D2245C4C9E009B01C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41BE29C4245C4C9A009B01C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41BE29C5245C4C9A009B01C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41BE29C9245C4C9D009B01C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41BE29CA245C4C9D009B01C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41BE29D8245C4C9E009B01C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41BE29D9245C4C9E009B01C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41BE29DB245C4C9E009B01C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrtografieQuiz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dcg-351.com.OrtografieQuiz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41BE29DC245C4C9E009B01C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrtografieQuiz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dcg-351.com.OrtografieQuiz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41BE29DE245C4C9E009B01C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrtografieQuizTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dcg-351.com.OrtografieQuizTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrtografieQuiz.app/OrtografieQuiz";
+			};
+			name = Debug;
+		};
+		41BE29DF245C4C9E009B01C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrtografieQuizTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dcg-351.com.OrtografieQuizTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrtografieQuiz.app/OrtografieQuiz";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41BE29B6245C4C9A009B01C4 /* Build configuration list for PBXProject "OrtografieQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41BE29D8245C4C9E009B01C4 /* Debug */,
+				41BE29D9245C4C9E009B01C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41BE29DA245C4C9E009B01C4 /* Build configuration list for PBXNativeTarget "OrtografieQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41BE29DB245C4C9E009B01C4 /* Debug */,
+				41BE29DC245C4C9E009B01C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41BE29DD245C4C9E009B01C4 /* Build configuration list for PBXNativeTarget "OrtografieQuizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41BE29DE245C4C9E009B01C4 /* Debug */,
+				41BE29DF245C4C9E009B01C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41BE29B3245C4C9A009B01C4 /* Project object */;
+}

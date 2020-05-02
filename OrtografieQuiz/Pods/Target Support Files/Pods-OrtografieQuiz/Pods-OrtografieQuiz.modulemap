@@ -1,0 +1,6 @@
+framework module Pods_OrtografieQuiz {
+  umbrella header "Pods-OrtografieQuiz-umbrella.h"
+
+  export *
+  module * { export * }
+}

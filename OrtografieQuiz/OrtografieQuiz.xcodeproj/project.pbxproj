@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4114E1C2245C5FF7004723D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4114E1C1245C5FF7004723D5 /* GoogleService-Info.plist */; };
 		41BE29BF245C4C9A009B01C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BE29BE245C4C9A009B01C4 /* AppDelegate.swift */; };
 		41BE29C1245C4C9A009B01C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BE29C0245C4C9A009B01C4 /* SceneDelegate.swift */; };
 		41BE29C3245C4C9A009B01C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BE29C2245C4C9A009B01C4 /* ViewController.swift */; };
@@ -14,6 +15,8 @@
 		41BE29C8245C4C9D009B01C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41BE29C7245C4C9D009B01C4 /* Assets.xcassets */; };
 		41BE29CB245C4C9D009B01C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41BE29C9245C4C9D009B01C4 /* LaunchScreen.storyboard */; };
 		41BE29D6245C4C9E009B01C4 /* OrtografieQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BE29D5245C4C9E009B01C4 /* OrtografieQuizTests.swift */; };
+		AEEAECB642E4D453CC781311 /* Pods_OrtografieQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9EC04C1D7BB7DDC2844D83 /* Pods_OrtografieQuiz.framework */; };
+		CC5C050AE2FBD3F9FAE56A8E /* Pods_OrtografieQuizTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BA4ABFB123A9565CB685ED /* Pods_OrtografieQuizTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13BA4ABFB123A9565CB685ED /* Pods_OrtografieQuizTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrtografieQuizTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6D03414DF2A4D4CDEF7052 /* Pods-OrtografieQuizTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrtografieQuizTests.release.xcconfig"; path = "Target Support Files/Pods-OrtografieQuizTests/Pods-OrtografieQuizTests.release.xcconfig"; sourceTree = "<group>"; };
+		4114E1C1245C5FF7004723D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		41BE29BB245C4C9A009B01C4 /* OrtografieQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrtografieQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41BE29BE245C4C9A009B01C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41BE29C0245C4C9A009B01C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +44,10 @@
 		41BE29D1245C4C9E009B01C4 /* OrtografieQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrtografieQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41BE29D5245C4C9E009B01C4 /* OrtografieQuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrtografieQuizTests.swift; sourceTree = "<group>"; };
 		41BE29D7245C4C9E009B01C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A7A454AD2B8C714067FB33B /* Pods-OrtografieQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrtografieQuiz.release.xcconfig"; path = "Target Support Files/Pods-OrtografieQuiz/Pods-OrtografieQuiz.release.xcconfig"; sourceTree = "<group>"; };
+		8F9EC04C1D7BB7DDC2844D83 /* Pods_OrtografieQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrtografieQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4715D2142C5546B6EC8DE66 /* Pods-OrtografieQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrtografieQuiz.debug.xcconfig"; path = "Target Support Files/Pods-OrtografieQuiz/Pods-OrtografieQuiz.debug.xcconfig"; sourceTree = "<group>"; };
+		D6927B892474ED383333C2DE /* Pods-OrtografieQuizTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrtografieQuizTests.debug.xcconfig"; path = "Target Support Files/Pods-OrtografieQuizTests/Pods-OrtografieQuizTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEEAECB642E4D453CC781311 /* Pods_OrtografieQuiz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +63,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5C050AE2FBD3F9FAE56A8E /* Pods_OrtografieQuizTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C3214508DAFFA4CB5E4A118 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F9EC04C1D7BB7DDC2844D83 /* Pods_OrtografieQuiz.framework */,
+				13BA4ABFB123A9565CB685ED /* Pods_OrtografieQuizTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		41BE29B2245C4C9A009B01C4 = {
 			isa = PBXGroup;
 			children = (
 				41BE29BD245C4C9A009B01C4 /* OrtografieQuiz */,
 				41BE29D4245C4C9E009B01C4 /* OrtografieQuizTests */,
 				41BE29BC245C4C9A009B01C4 /* Products */,
+				E427DF101673471FE58A8C23 /* Pods */,
+				0C3214508DAFFA4CB5E4A118 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +108,7 @@
 				41BE29C4245C4C9A009B01C4 /* Main.storyboard */,
 				41BE29C7245C4C9D009B01C4 /* Assets.xcassets */,
 				41BE29C9245C4C9D009B01C4 /* LaunchScreen.storyboard */,
+				4114E1C1245C5FF7004723D5 /* GoogleService-Info.plist */,
 				41BE29CC245C4C9D009B01C4 /* Info.plist */,
 			);
 			path = OrtografieQuiz;
@@ -99,6 +123,17 @@
 			path = OrtografieQuizTests;
 			sourceTree = "<group>";
 		};
+		E427DF101673471FE58A8C23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4715D2142C5546B6EC8DE66 /* Pods-OrtografieQuiz.debug.xcconfig */,
+				4A7A454AD2B8C714067FB33B /* Pods-OrtografieQuiz.release.xcconfig */,
+				D6927B892474ED383333C2DE /* Pods-OrtografieQuizTests.debug.xcconfig */,
+				3E6D03414DF2A4D4CDEF7052 /* Pods-OrtografieQuizTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41BE29DA245C4C9E009B01C4 /* Build configuration list for PBXNativeTarget "OrtografieQuiz" */;
 			buildPhases = (
+				9CFBEF8B90C0B319CE636F96 /* [CP] Check Pods Manifest.lock */,
 				41BE29B7245C4C9A009B01C4 /* Sources */,
 				41BE29B8245C4C9A009B01C4 /* Frameworks */,
 				41BE29B9245C4C9A009B01C4 /* Resources */,
+				C1DCFEBEA545DE3CF25C2582 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +160,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41BE29DD245C4C9E009B01C4 /* Build configuration list for PBXNativeTarget "OrtografieQuizTests" */;
 			buildPhases = (
+				8D9AEF780071EBCFC853072B /* [CP] Check Pods Manifest.lock */,
 				41BE29CD245C4C9E009B01C4 /* Sources */,
 				41BE29CE245C4C9E009B01C4 /* Frameworks */,
 				41BE29CF245C4C9E009B01C4 /* Resources */,
@@ -183,6 +221,7 @@
 				41BE29CB245C4C9D009B01C4 /* LaunchScreen.storyboard in Resources */,
 				41BE29C8245C4C9D009B01C4 /* Assets.xcassets in Resources */,
 				41BE29C6245C4C9A009B01C4 /* Main.storyboard in Resources */,
+				4114E1C2245C5FF7004723D5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +233,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D9AEF780071EBCFC853072B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrtografieQuizTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CFBEF8B90C0B319CE636F96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrtografieQuiz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1DCFEBEA545DE3CF25C2582 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrtografieQuiz/Pods-OrtografieQuiz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrtografieQuiz/Pods-OrtografieQuiz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrtografieQuiz/Pods-OrtografieQuiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41BE29B7245C4C9A009B01C4 /* Sources */ = {
@@ -360,6 +463,7 @@
 		};
 		41BE29DB245C4C9E009B01C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4715D2142C5546B6EC8DE66 /* Pods-OrtografieQuiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +481,7 @@
 		};
 		41BE29DC245C4C9E009B01C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A7A454AD2B8C714067FB33B /* Pods-OrtografieQuiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +499,7 @@
 		};
 		41BE29DE245C4C9E009B01C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6927B892474ED383333C2DE /* Pods-OrtografieQuizTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +521,7 @@
 		};
 		41BE29DF245C4C9E009B01C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E6D03414DF2A4D4CDEF7052 /* Pods-OrtografieQuizTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

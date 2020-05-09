@@ -1,13 +1,12 @@
 //
 //  AppDelegate.swift
-//  OrtografieQuiz
+//  OrtoQuizIosApp
 //
-//  Created by user169471 on 5/1/20.
+//  Created by user169471 on 5/7/20.
 //  Copyright © 2020 dcg-351. All rights reserved.
 //
 
 import UIKit
-//import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-  //      FirebaseApp.configure()
         return true
     }
 

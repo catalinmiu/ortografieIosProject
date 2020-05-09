@@ -7,22 +7,77 @@
 //
 
 import UIKit
-import Firebase
+//import Firebase
 
 class ViewController: UIViewController {
-    @IBOutlet weak var questionTitle: UILabel!
-//    var asdq: DatabaseReference
+    
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var questionCounter: UILabel!
+    @IBOutlet weak var progressView: UIView!
+    @IBOutlet weak var questionsLabel: UILabel!
+    
+    
+    @IBOutlet weak var optionA: UIButton!
+    @IBOutlet weak var optionB: UIButton!
+    
+    let allQuestions = QuestionBank()
+    var questionNumber: Int = 0
+    var score: Int = 0
+    var selectedAnswer: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-//        asdq = DatabaseReference..child("Questions")
-    
-        //ref.child("Questions").childByAutoId().setValue(["question": "_____ sunt cuminti", "possibileAnswer1": "Copii", "possibileAnswer2": "Copiii", "correct_answer": 1])
-        //ref.child("Questions").childByAutoId().setValue(["question": "Sa incepi din noaptea aceea, ____ minte", "possibileAnswer1": "tii", "possibileAnswer2": "ti", "correct_answer": 1])
-        //ref.child("Questions").childByAutoId().setValue(["question": "Cum de in cateva zile ____ schimbat astfel locurile", "possibileAnswer1": "s-au", "possibileAnswer2": "sau", "correct_answer": 1])
-        //ref.childByAutoId().setValue(["name": "TOM", "age":14, "gender": "F"])
-    }
-
-    
+        updateQuestion()
 }
 
+    @IBAction func answerPressed(_ sender: UIButton) {
+        if sender.tag == selectedAnswer {
+            print("correct")
+            score += 1
+        } else {
+            print("wrong")
+        }
+        questionNumber += 1
+        updateQuestion()
+        updateUI()
+        
+    }
+    
+    func updateQuestion() {
+        
+        
+        if questionNumber<allQuestions.list.count {
+            questionsLabel.text = allQuestions.list[questionNumber].questionTitle
+            
+            optionA.setTitle(allQuestions.list[questionNumber].firstAnswer, for: UIControl.State.normal)
+            optionB.setTitle(allQuestions.list[questionNumber].secondAnswer, for: UIControl.State.normal)
+            selectedAnswer = allQuestions.list[questionNumber].correctAnswer
+        }
+        else {
+            let alert = UIAlertController(title: "Awesome", message: "End of Quiz. Do you want to start over?", preferredStyle: .alert)
+            let restartAction = UIAlertAction(title: "Restart", style: .default, handler: {
+                action in self.restartQuiz()
+            })
+            
+            alert.addAction(restartAction)
+            present(alert, animated: true, completion: nil)
+            
+        }
+        updateUI()
+        
+    }
+    
+    func updateUI() {
+        
+        scoreLabel.text = "Score: \(score)"
+        questionCounter.text = "\(questionNumber + 1)/\(allQuestions.list.count)"
+        progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(questionNumber+1)
+    }
+    
+    func restartQuiz() {
+        score = 0
+        questionNumber = 0
+        updateQuestion()
+    }
+    
+}

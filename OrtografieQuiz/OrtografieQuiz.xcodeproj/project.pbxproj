@@ -17,6 +17,8 @@
 		41BE29C8245C4C9D009B01C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41BE29C7245C4C9D009B01C4 /* Assets.xcassets */; };
 		41BE29CB245C4C9D009B01C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41BE29C9245C4C9D009B01C4 /* LaunchScreen.storyboard */; };
 		41BE29D6245C4C9E009B01C4 /* OrtografieQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BE29D5245C4C9E009B01C4 /* OrtografieQuizTests.swift */; };
+		41FD91A52469B2E200F2FC36 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 41FD91A22469B2E200F2FC36 /* ProgressHUD.bundle */; };
+		41FD91A62469B2E200F2FC36 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FD91A42469B2E200F2FC36 /* ProgressHUD.m */; };
 		AEEAECB642E4D453CC781311 /* Pods_OrtografieQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9EC04C1D7BB7DDC2844D83 /* Pods_OrtografieQuiz.framework */; };
 		CC5C050AE2FBD3F9FAE56A8E /* Pods_OrtografieQuizTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BA4ABFB123A9565CB685ED /* Pods_OrtografieQuizTests.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,10 @@
 		41BE29D1245C4C9E009B01C4 /* OrtografieQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrtografieQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41BE29D5245C4C9E009B01C4 /* OrtografieQuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrtografieQuizTests.swift; sourceTree = "<group>"; };
 		41BE29D7245C4C9E009B01C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41FD91A12469B2E100F2FC36 /* OrtografieQuiz-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OrtografieQuiz-Bridging-Header.h"; sourceTree = "<group>"; };
+		41FD91A22469B2E200F2FC36 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		41FD91A32469B2E200F2FC36 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		41FD91A42469B2E200F2FC36 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		4A7A454AD2B8C714067FB33B /* Pods-OrtografieQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrtografieQuiz.release.xcconfig"; path = "Target Support Files/Pods-OrtografieQuiz/Pods-OrtografieQuiz.release.xcconfig"; sourceTree = "<group>"; };
 		8F9EC04C1D7BB7DDC2844D83 /* Pods_OrtografieQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrtografieQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4715D2142C5546B6EC8DE66 /* Pods-OrtografieQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrtografieQuiz.debug.xcconfig"; path = "Target Support Files/Pods-OrtografieQuiz/Pods-OrtografieQuiz.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +121,7 @@
 		41BE29BD245C4C9A009B01C4 /* OrtografieQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				41FD91A02469B2B800F2FC36 /* Utils */,
 				418F225024668A07000743C8 /* Model */,
 				41BE29BE245C4C9A009B01C4 /* AppDelegate.swift */,
 				41BE29C0245C4C9A009B01C4 /* SceneDelegate.swift */,
@@ -135,6 +142,17 @@
 				41BE29D7245C4C9E009B01C4 /* Info.plist */,
 			);
 			path = OrtografieQuizTests;
+			sourceTree = "<group>";
+		};
+		41FD91A02469B2B800F2FC36 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				41FD91A22469B2E200F2FC36 /* ProgressHUD.bundle */,
+				41FD91A32469B2E200F2FC36 /* ProgressHUD.h */,
+				41FD91A42469B2E200F2FC36 /* ProgressHUD.m */,
+				41FD91A12469B2E100F2FC36 /* OrtografieQuiz-Bridging-Header.h */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		E427DF101673471FE58A8C23 /* Pods */ = {
@@ -201,6 +219,7 @@
 				TargetAttributes = {
 					41BE29BA245C4C9A009B01C4 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					41BE29D0245C4C9E009B01C4 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -235,6 +254,7 @@
 				41BE29CB245C4C9D009B01C4 /* LaunchScreen.storyboard in Resources */,
 				41BE29C8245C4C9D009B01C4 /* Assets.xcassets in Resources */,
 				41BE29C6245C4C9A009B01C4 /* Main.storyboard in Resources */,
+				41FD91A52469B2E200F2FC36 /* ProgressHUD.bundle in Resources */,
 				4114E1C2245C5FF7004723D5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FD91A62469B2E200F2FC36 /* ProgressHUD.m in Sources */,
 				41BE29C3245C4C9A009B01C4 /* ViewController.swift in Sources */,
 				418F225224668A23000743C8 /* Question.swift in Sources */,
 				41BE29BF245C4C9A009B01C4 /* AppDelegate.swift in Sources */,
@@ -482,6 +503,7 @@
 			baseConfigurationReference = B4715D2142C5546B6EC8DE66 /* Pods-OrtografieQuiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OrtografieQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -490,6 +512,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dcg-351.com.OrtografieQuiz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OrtografieQuiz/Utils/OrtografieQuiz-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -500,6 +524,7 @@
 			baseConfigurationReference = 4A7A454AD2B8C714067FB33B /* Pods-OrtografieQuiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OrtografieQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -508,6 +533,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dcg-351.com.OrtografieQuiz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OrtografieQuiz/Utils/OrtografieQuiz-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

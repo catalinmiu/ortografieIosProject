@@ -21,18 +21,16 @@
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="duv-x9-Ctt">
                                         <rect key="frame" x="0.0" y="75.5" width="124" height="52.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XX/25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgT-bS-lRj">
-                                        <rect key="frame" x="64" y="32" width="47.5" height="20.5"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX/25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgT-bS-lRj">
+                                        <rect key="frame" x="14" y="14" width="47.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTZ-Sa-3C6">
-                                        <rect key="frame" x="252" y="32" width="131" height="76"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTZ-Sa-3C6">
+                                        <rect key="frame" x="279.5" y="14" width="120.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -40,7 +38,11 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="vgT-bS-lRj" firstAttribute="leading" secondItem="f0Y-15-sN6" secondAttribute="leading" constant="14" id="3iS-ex-AZh"/>
+                                    <constraint firstItem="vgT-bS-lRj" firstAttribute="top" secondItem="f0Y-15-sN6" secondAttribute="top" constant="14" id="AZQ-CN-edn"/>
                                     <constraint firstAttribute="height" constant="128" id="FUo-LG-pZF"/>
+                                    <constraint firstItem="YTZ-Sa-3C6" firstAttribute="top" secondItem="f0Y-15-sN6" secondAttribute="top" constant="14" id="YfM-Ic-doU"/>
+                                    <constraint firstAttribute="trailing" secondItem="YTZ-Sa-3C6" secondAttribute="trailing" constant="14" id="q2x-ql-5LP"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="anj-FQ-QDl">
@@ -108,6 +110,7 @@
                                     <constraint firstAttribute="trailing" secondItem="f2O-oU-jda" secondAttribute="trailing" id="H9o-9X-QkP"/>
                                     <constraint firstAttribute="trailing" secondItem="WI8-Qa-Mv8" secondAttribute="trailing" id="Rf0-jN-STf"/>
                                     <constraint firstAttribute="bottom" secondItem="f2O-oU-jda" secondAttribute="bottom" id="Ri3-j5-Py8"/>
+                                    <constraint firstItem="WI8-Qa-Mv8" firstAttribute="top" secondItem="anj-FQ-QDl" secondAttribute="top" id="Tik-t1-hxi"/>
                                     <constraint firstItem="f2O-oU-jda" firstAttribute="leading" secondItem="anj-FQ-QDl" secondAttribute="leading" id="g64-tV-zJb"/>
                                     <constraint firstItem="f2O-oU-jda" firstAttribute="centerX" secondItem="anj-FQ-QDl" secondAttribute="centerX" id="p8e-jY-P6o"/>
                                     <constraint firstItem="f2O-oU-jda" firstAttribute="top" secondItem="WI8-Qa-Mv8" secondAttribute="bottom" id="znl-2x-3E3"/>

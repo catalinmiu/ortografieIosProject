@@ -32,9 +32,12 @@ class ViewController: UIViewController {
 
     @IBAction func answerPressed(_ sender: UIButton) {
         if sender.tag == selectedAnswer {
+            ProgressHUD.showSuccess("Correct", interaction: false)
             print("correct")
             score += 1
         } else {
+            ProgressHUD.showError("Wrong", interaction: false)
+            //ProgressHUD.showError("Wrong Answer")
             print("wrong")
         }
         questionNumber += 1
@@ -45,7 +48,6 @@ class ViewController: UIViewController {
     
     func updateQuestion() {
         
-        
         if questionNumber<allQuestions.list.count {
             questionsLabel.text = allQuestions.list[questionNumber].questionTitle
             
@@ -54,14 +56,19 @@ class ViewController: UIViewController {
             selectedAnswer = allQuestions.list[questionNumber].correctAnswer
         }
         else {
-            let alert = UIAlertController(title: "Awesome", message: "End of Quiz. Do you want to start over?", preferredStyle: .alert)
-            let restartAction = UIAlertAction(title: "Restart", style: .default, handler: {
-                action in self.restartQuiz()
-            })
+            questionNumber -= 1
             
-            alert.addAction(restartAction)
-            present(alert, animated: true, completion: nil)
-            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
+                let alert = UIAlertController(title: "Awesome", message: "End of Quiz. Do you want to start over?", preferredStyle: .alert)
+                let restartAction = UIAlertAction(title: "Restart", style: .default, handler: {
+                    action in self.restartQuiz()
+                })
+                
+                alert.addAction(restartAction)
+                self.present(alert, animated: true, completion: nil)
+
+            }
+                        
         }
         updateUI()
         

@@ -14,8 +14,8 @@
             filePath = "OrtografieQuiz/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "answerPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "OrtografieQuiz/Model/QuestionBank.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,9 +46,165 @@
             filePath = "OrtografieQuiz/Model/QuestionBank.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F1B4441-8F1B-4075-9B2F-2625CB26B285"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OrtografieQuiz/Model/QuestionBank.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C35DD5F-4305-4116-B7B5-7756044A41B7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OrtografieQuiz/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
             endingLineNumber = "24"
-            landmarkName = "init()"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "6C35DD5F-4305-4116-B7B5-7756044A41B7 - 334f44608a669aea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OrtografieQuiz.ViewController.questionNumber.getter : Swift.Int"
+                  moduleName = "OrtografieQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user169471/Desktop/ortografieIosProject/OrtografieQuiz/OrtografieQuiz/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "110">
+               </Location>
+               <Location
+                  uuid = "6C35DD5F-4305-4116-B7B5-7756044A41B7 - a6d47696f3c5e6fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OrtografieQuiz.ViewController.questionNumber.setter : Swift.Int"
+                  moduleName = "OrtografieQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user169471/Desktop/ortografieIosProject/OrtografieQuiz/OrtografieQuiz/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "118">
+               </Location>
+               <Location
+                  uuid = "6C35DD5F-4305-4116-B7B5-7756044A41B7 - 44a29bca64ebf7e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OrtografieQuiz.ViewController.questionNumber.modify : Swift.Int"
+                  moduleName = "OrtografieQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user169471/Desktop/ortografieIosProject/OrtografieQuiz/OrtografieQuiz/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "6C35DD5F-4305-4116-B7B5-7756044A41B7 - d9a702c31ace7109"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OrtografieQuiz.ViewController.questionNumber.modify : Swift.Int with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "OrtografieQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user169471/Desktop/ortografieIosProject/OrtografieQuiz/OrtografieQuiz/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "6C35DD5F-4305-4116-B7B5-7756044A41B7 - e38b90c42bd0c8a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OrtografieQuiz.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; OrtografieQuiz.ViewController"
+                  moduleName = "OrtografieQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user169471/Desktop/ortografieIosProject/OrtografieQuiz/OrtografieQuiz/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1156">
+               </Location>
+               <Location
+                  uuid = "6C35DD5F-4305-4116-B7B5-7756044A41B7 - 11387f5f4cdc136d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OrtografieQuiz.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;OrtografieQuiz.ViewController&gt;"
+                  moduleName = "OrtografieQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user169471/Desktop/ortografieIosProject/OrtografieQuiz/OrtografieQuiz/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1091">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "276B7540-F73D-40CB-A881-D8CC15427956"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OrtografieQuiz/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0A5C3BF-3724-44C3-9F98-48958ABE3F01"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OrtografieQuiz/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "answerPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

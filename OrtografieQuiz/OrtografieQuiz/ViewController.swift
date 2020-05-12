@@ -27,7 +27,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateQuestion()
+        ProgressHUD.show("Please wait...", interaction: false)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+            self.updateQuestion()
+            ProgressHUD.dismiss()
+        }
+        
 }
 
     @IBAction func answerPressed(_ sender: UIButton) {

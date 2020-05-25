@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4114E1C2245C5FF7004723D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4114E1C1245C5FF7004723D5 /* GoogleService-Info.plist */; };
+		416D138A247C203F00692CF2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416D1389247C203F00692CF2 /* SignUpViewController.swift */; };
+		416D138C247C204E00692CF2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416D138B247C204E00692CF2 /* LogInViewController.swift */; };
+		416D138E247C205C00692CF2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416D138D247C205C00692CF2 /* HomeViewController.swift */; };
+		416D1391247C3ED500692CF2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416D1390247C3ED500692CF2 /* Utilities.swift */; };
+		416D1394247C415400692CF2 /* LoginAndSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416D1393247C415400692CF2 /* LoginAndSignUpViewController.swift */; };
+		416D1396247C4F7800692CF2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416D1395247C4F7800692CF2 /* Constants.swift */; };
 		418F225224668A23000743C8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418F225124668A23000743C8 /* Question.swift */; };
 		418F225424668AF4000743C8 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418F225324668AF4000743C8 /* QuestionBank.swift */; };
 		41BE29BF245C4C9A009B01C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BE29BE245C4C9A009B01C4 /* AppDelegate.swift */; };
@@ -37,6 +43,12 @@
 		13BA4ABFB123A9565CB685ED /* Pods_OrtografieQuizTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrtografieQuizTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E6D03414DF2A4D4CDEF7052 /* Pods-OrtografieQuizTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrtografieQuizTests.release.xcconfig"; path = "Target Support Files/Pods-OrtografieQuizTests/Pods-OrtografieQuizTests.release.xcconfig"; sourceTree = "<group>"; };
 		4114E1C1245C5FF7004723D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		416D1389247C203F00692CF2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		416D138B247C204E00692CF2 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		416D138D247C205C00692CF2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		416D1390247C3ED500692CF2 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		416D1393247C415400692CF2 /* LoginAndSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndSignUpViewController.swift; sourceTree = "<group>"; };
+		416D1395247C4F7800692CF2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		418F225124668A23000743C8 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		418F225324668AF4000743C8 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 		41BE29BB245C4C9A009B01C4 /* OrtografieQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrtografieQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +101,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		416D138F247C206400692CF2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				41BE29C2245C4C9A009B01C4 /* ViewController.swift */,
+				416D1389247C203F00692CF2 /* SignUpViewController.swift */,
+				416D138B247C204E00692CF2 /* LogInViewController.swift */,
+				416D138D247C205C00692CF2 /* HomeViewController.swift */,
+				416D1393247C415400692CF2 /* LoginAndSignUpViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		416D1392247C3EDC00692CF2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				416D1390247C3ED500692CF2 /* Utilities.swift */,
+				416D1395247C4F7800692CF2 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		418F225024668A07000743C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,11 +154,12 @@
 		41BE29BD245C4C9A009B01C4 /* OrtografieQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				416D1392247C3EDC00692CF2 /* Helpers */,
+				416D138F247C206400692CF2 /* ViewControllers */,
 				41FD91A02469B2B800F2FC36 /* Utils */,
 				418F225024668A07000743C8 /* Model */,
 				41BE29BE245C4C9A009B01C4 /* AppDelegate.swift */,
 				41BE29C0245C4C9A009B01C4 /* SceneDelegate.swift */,
-				41BE29C2245C4C9A009B01C4 /* ViewController.swift */,
 				41BE29C4245C4C9A009B01C4 /* Main.storyboard */,
 				41BE29C7245C4C9D009B01C4 /* Assets.xcassets */,
 				41BE29C9245C4C9D009B01C4 /* LaunchScreen.storyboard */,
@@ -338,11 +372,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				41FD91A62469B2E200F2FC36 /* ProgressHUD.m in Sources */,
+				416D138A247C203F00692CF2 /* SignUpViewController.swift in Sources */,
 				41BE29C3245C4C9A009B01C4 /* ViewController.swift in Sources */,
+				416D1394247C415400692CF2 /* LoginAndSignUpViewController.swift in Sources */,
 				418F225224668A23000743C8 /* Question.swift in Sources */,
+				416D138C247C204E00692CF2 /* LogInViewController.swift in Sources */,
+				416D138E247C205C00692CF2 /* HomeViewController.swift in Sources */,
 				41BE29BF245C4C9A009B01C4 /* AppDelegate.swift in Sources */,
 				418F225424668AF4000743C8 /* QuestionBank.swift in Sources */,
+				416D1391247C3ED500692CF2 /* Utilities.swift in Sources */,
 				41BE29C1245C4C9A009B01C4 /* SceneDelegate.swift in Sources */,
+				416D1396247C4F7800692CF2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

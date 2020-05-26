@@ -34,8 +34,11 @@ class QuestionBank {
                     let questionTitle = questionObject?["question"]
                     let possibileAnswer1 = questionObject?["possibileAnswer1"]
                     let possibileAnswer2 = questionObject?["possibileAnswer2"]
-                    let correctAnswer = questionObject?["correct_answer"]
+                    var correctAnswer = questionObject?["correct_answer"]
                     //list.append(Question(questionTitle: "Ma duc pana acasa sa imi ___ ceva de mancare?", firstAnswer: "niciodata", secondAnswer: "nici o data", correctAnswer: 0))
+                    if correctAnswer == nil {
+                        correctAnswer = 0 as AnyObject
+                    }
                     self.list.append(Question(questionTitle: questionTitle as! String,
                                               firstAnswer: possibileAnswer1 as! String,
                                               secondAnswer: possibileAnswer2  as! String,

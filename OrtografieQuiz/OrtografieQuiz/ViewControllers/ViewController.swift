@@ -76,7 +76,23 @@ class ViewController: UIViewController {
         else {
             questionNumber -= 1
             let db = Firestore.firestore()
-            db.collection("quizHistory").addDocument(data: ["userId":  Auth.auth().currentUser?.uid, "acuratete": score]) {
+            let currentUid = Auth.auth().currentUser?.uid
+            db.collection("users").whereField("uid", isEqualTo: currentUid).getDocuments { (query, err) in
+                if err != nil {
+                    
+                }
+                else if query!.documents.count != 1 {
+                    
+                }
+                else {
+                    let document = query!.documents.first
+                    document?.reference.updateData(["total_correct_answers" : self.score])
+                }
+            }
+            
+            
+            
+            db.collection("quizHistory").addDocument(data: ["userId": currentUid, "acuratete": score]) {
                 (error) in
                 
                 if error != nil {

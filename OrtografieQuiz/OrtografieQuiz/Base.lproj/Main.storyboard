@@ -285,20 +285,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85S-XX-dyH">
-                                <rect key="frame" x="184" y="437.5" width="46" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pn2-Rx-aVF">
+                                <rect key="frame" x="10" y="54" width="394" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Clasament General" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xB-Ew-yNn">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ati obtinut scorul:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eI-W1-Vv9">
+                                        <rect key="frame" x="0.0" y="32.5" width="394" height="37"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85S-XX-dyH">
+                                        <rect key="frame" x="0.0" y="69.5" width="394" height="230.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="gqe-sO-BKO"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pMC-J5-VYQ">
+                                <rect key="frame" x="0.0" y="354" width="414" height="498"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Sdw-cx-PSC">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sdw-cx-PSC" id="YFu-cM-QOk">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="85S-XX-dyH" firstAttribute="centerY" secondItem="SUl-Y6-Uwe" secondAttribute="centerY" id="G48-ts-OAM"/>
-                            <constraint firstItem="85S-XX-dyH" firstAttribute="centerX" secondItem="SUl-Y6-Uwe" secondAttribute="centerX" id="jKN-X9-CwL"/>
+                            <constraint firstItem="Jcn-0s-sc0" firstAttribute="trailing" secondItem="pMC-J5-VYQ" secondAttribute="trailing" id="DJH-hg-8qQ"/>
+                            <constraint firstItem="pMC-J5-VYQ" firstAttribute="top" secondItem="pn2-Rx-aVF" secondAttribute="bottom" id="NAw-XU-eys"/>
+                            <constraint firstItem="pn2-Rx-aVF" firstAttribute="top" secondItem="Jcn-0s-sc0" secondAttribute="top" constant="10" id="Pe2-AI-xbi"/>
+                            <constraint firstItem="pn2-Rx-aVF" firstAttribute="leading" secondItem="Jcn-0s-sc0" secondAttribute="leading" constant="10" id="aeK-fs-Y06"/>
+                            <constraint firstItem="pMC-J5-VYQ" firstAttribute="leading" secondItem="Jcn-0s-sc0" secondAttribute="leading" id="b9V-je-BFG"/>
+                            <constraint firstItem="Jcn-0s-sc0" firstAttribute="trailing" secondItem="pn2-Rx-aVF" secondAttribute="trailing" constant="10" id="u1E-ch-5mv"/>
+                            <constraint firstItem="Jcn-0s-sc0" firstAttribute="bottom" secondItem="pMC-J5-VYQ" secondAttribute="bottom" constant="10" id="zkm-vg-q1V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jcn-0s-sc0"/>
                     </view>
+                    <connections>
+                        <outlet property="score" destination="85S-XX-dyH" id="ovl-Xr-OkO"/>
+                        <outlet property="tableView" destination="pMC-J5-VYQ" id="1hz-oJ-52n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YFN-gY-8hI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

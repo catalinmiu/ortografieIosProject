@@ -12,44 +12,13 @@ import FBSDKShareKit
 class HomeViewController: UIViewController, SharingDelegate {
 
     var scoreText:String = ""
-    
-    //var dummyData = ["catalin - 10 score", "Halina - 5 puncte", "Ovidiu - 12 puncte"]
-    
     var dummyData:[String] = []
 
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var score: UILabel!
     
-    /*
-    override func viewWillAppear(_ animated: Bool) {
-        let db = Firestore.firestore()
-        //sleep(23)
-        db.collection("users").order(by: "total_correct_answers", descending: true).limit(to:5).addSnapshotListener {
-                   query, error in
-                   guard let snapshot = query else {
-                       print("error ..\(error!)")
-                       return
-                   }
-                   if snapshot.count>0 {
-                       //self.list.removeAll()
-                       
-                       for document in query!.documents {
-                           let questionObject = document.data() as? [String: AnyObject]
-                        let firstName:String = questionObject?["firstname"] as! String
-                        let TCA:Int = questionObject?["total_correct_answers"] as! Int
-                           
-                           let text = firstName + " \(TCA)"
-                           self.dummyData.append(text)
-                       }
-                       
-                       
-                   }
-            self.tableView.reloadData()
-               }
-        
-    }
-    */
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let db = Firestore.firestore()
@@ -80,12 +49,6 @@ class HomeViewController: UIViewController, SharingDelegate {
         tableView.dataSource = self
         tableView.delegate = self
         
-        //var dummy
-        
-        
-        //let clasament = Clasament()
-        //	dummyData = clasament.populate()
-        
         
         score?.text = scoreText
         // Do any additional setup after loading the view.
@@ -97,11 +60,9 @@ class HomeViewController: UIViewController, SharingDelegate {
             let restartAction = UIAlertAction(title: "Restart", style: .default, handler: {
                 action in
                 let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.gameViewController) as? ViewController
-                //homeViewController?.scoreText = "\(self.score)"
                 self.view.window?.rootViewController = homeViewController
                 
                 self.view.window?.makeKeyAndVisible()
-                //self.restartQuiz()
             })
             
             
@@ -156,7 +117,4 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dummyData.count
     }
-    /*func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-    }*/
 }

@@ -14,21 +14,13 @@ class QuestionBank {
     var allList = [Question]()
     var list = [Question]()
     
-    //var ref: DatabaseReference?
-    
-    
-    var ref = Database.database().reference().child("Questions")
     
     init() {
         let db = Firestore.firestore()
         db.collection("allQuestions").addSnapshotListener {
             query, error in
-            guard let snapshot = query else {
-                print("error ..\(error!)")
-                return
-            }
-            if snapshot.count>0 {
-                //self.list.removeAll()
+        
+            if query!.count>0 {
                 
                 for document in query!.documents {
                     let questionObject = document.data() as? [String: AnyObject]
@@ -36,7 +28,6 @@ class QuestionBank {
                     let possibileAnswer1 = questionObject?["possibileAnswer1"]
                     let possibileAnswer2 = questionObject?["possibileAnswer2"]
                     var correctAnswer = questionObject?["correct_answer"]
-                    //list.append(Question(questionTitle: "Ma duc pana acasa sa imi ___ ceva de mancare?", firstAnswer: "niciodata", secondAnswer: "nici o data", correctAnswer: 0))
                     if correctAnswer == nil {
                         correctAnswer = 0 as AnyObject
                     }
@@ -56,9 +47,7 @@ class QuestionBank {
                     
                 }
                 for _ in 1...10 {
-                    //let number = Int.random(in: 0..<list.count)
                     let index = Int(arc4random_uniform(UInt32(self.allList.count)))
-                    
                     self.list.append(self.allList[index])
                     self.allList.remove(at: index)
                 }

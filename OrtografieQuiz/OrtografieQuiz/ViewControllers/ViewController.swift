@@ -103,7 +103,6 @@ class ViewController: UIViewController {
                     //self.showError("User data couldn't ")
                 }
             }
-            //self.transitionToHome()
             
             let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
             homeViewController?.scoreText = "\(self.score)"	
@@ -111,17 +110,7 @@ class ViewController: UIViewController {
             
             self.view.window?.makeKeyAndVisible()
             
-            /*DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
-                let alert = UIAlertController(title: "Awesome", message: "End of Quiz. Do you want to start over?", preferredStyle: .alert)
-                let restartAction = UIAlertAction(title: "Restart", style: .default, handler: {
-                    action in self.restartQuiz()
-                })
-                
-                
-                alert.addAction(restartAction)
-                self.present(alert, animated: true, completion: nil)
-
-            }*/
+            
                         
         }
         updateUI()

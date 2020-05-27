@@ -24,8 +24,8 @@ class LogInViewController: UIViewController {
     
     func setUpElements() {
         error.alpha = 0
-        Utilities.styleTextField(emailField)
-        Utilities.styleTextField(passwordField)
+        //Utilities.styleTextField(emailField)
+        //Utilities.styleTextField(passwordField)
         Utilities.styleFilledButton(loginButton)
     }
     

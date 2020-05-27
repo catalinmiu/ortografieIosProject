@@ -14,7 +14,7 @@ import FirebaseFirestore
 import FirebaseDatabase
 
 class Clasament {
-    var list = [String]()
+    /*var list = [String]()
     
     //var ref: DatabaseReference?
     
@@ -122,5 +122,5 @@ class Clasament {
     /*func getList() {
         return self.list;
     }*/
-    
+    */
 }

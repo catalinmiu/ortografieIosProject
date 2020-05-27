@@ -11,6 +11,7 @@ target 'OrtografieQuiz' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
+  pod 'FacebookShare'
   target 'OrtografieQuizTests' do
     inherit! :search_paths
     # Pods for testing

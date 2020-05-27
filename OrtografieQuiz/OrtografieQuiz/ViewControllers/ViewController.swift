@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ProgressHUD.show("Please wait...", interaction: false)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.updateQuestion()
             ProgressHUD.dismiss()
         }
@@ -86,7 +86,11 @@ class ViewController: UIViewController {
                 }
                 else {
                     let document = query!.documents.first
-                    document?.reference.updateData(["total_correct_answers" : self.score])
+                    
+                    let user = document?.data() as? [String: AnyObject]
+                    let score = user?["total_correct_answers"]
+                    
+                    document?.reference.updateData(["total_correct_answers" : score as! Int + self.score])
                 }
             }
             
@@ -102,12 +106,12 @@ class ViewController: UIViewController {
             //self.transitionToHome()
             
             let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-            homeViewController?.scoreText = "10"
+            homeViewController?.scoreText = "\(self.score)"	
             self.view.window?.rootViewController = homeViewController
             
             self.view.window?.makeKeyAndVisible()
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
+            /*DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
                 let alert = UIAlertController(title: "Awesome", message: "End of Quiz. Do you want to start over?", preferredStyle: .alert)
                 let restartAction = UIAlertAction(title: "Restart", style: .default, handler: {
                     action in self.restartQuiz()
@@ -117,7 +121,7 @@ class ViewController: UIViewController {
                 alert.addAction(restartAction)
                 self.present(alert, animated: true, completion: nil)
 
-            }
+            }*/
                         
         }
         updateUI()
